@@ -2,4 +2,4 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-  return HttpResponse("Hello, world. You're at the webapp home page.")
+  return render(request, 'webapp/index.html') 
